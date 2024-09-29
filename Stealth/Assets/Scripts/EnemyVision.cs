@@ -11,13 +11,6 @@ public class EnemyVision : MonoBehaviour
     public LayerMask obstacleMask;
 
     public GameObject player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Vector3 playerTarget = (player.transform.position - transform.position).normalized;

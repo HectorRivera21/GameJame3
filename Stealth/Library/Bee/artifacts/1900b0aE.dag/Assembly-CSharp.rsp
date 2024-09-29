@@ -355,6 +355,7 @@
 "Assets/Scripts/EnemyVision.cs"
 "Assets/Scripts/PatrolScript.cs"
 "Assets/Scripts/ThirdPersonMovement.cs"
+"Assets/Scripts/VisualCone.cs"
 -langversion:9.0
 
 /deterministic

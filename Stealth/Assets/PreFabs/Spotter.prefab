@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0.992, y: 1.031, z: -1.8}
   m_LocalScale: {x: 0.5907, y: 0.5788, z: 0.6526}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2129435639316468565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3940595800673342616
@@ -118,3 +119,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914952c50fac783429a4dea76cc9acb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoints: []
+  targetPoint: 0
+  speed: 0
+--- !u!1 &8373179220221559958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129435639316468565}
+  - component: {fileID: 203488050809839715}
+  m_Layer: 0
+  m_Name: VisionCone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129435639316468565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373179220221559958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8519151767267402964}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203488050809839715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373179220221559958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936d85df44ff5e044b060c9a53814ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisionConeMaterial: {fileID: 2100000, guid: 0204d77f01b340649a51d8c19bf7400b, type: 2}
+  VisionRange: 8
+  VisionAngle: 45
+  VisionObstructingLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  VisionConeResolution: 120
