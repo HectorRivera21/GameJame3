@@ -8,6 +8,7 @@
 **/Build
 **/Logs
 **/UserSettings
+**/Library/*
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/

@@ -20,7 +20,7 @@ public class PatrolScript : MonoBehaviour
         {
             increaseTargetInt();
         }
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[targetPoint].position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[targetPoint].position, speed*Time.deltaTime);
     }
 
     void increaseTargetInt()
