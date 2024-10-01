@@ -11,11 +11,12 @@ TagManager:
   - PlayerLayer
   - Water
   - UI
+  - Player
+  - 
   - ObsticalLayer
   - 
   - 
-  - 
-  - 
+  - Ground
   - 
   - 
   - 
