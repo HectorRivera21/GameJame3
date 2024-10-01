@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 18034319378054406}
   - component: {fileID: 8706693659664276310}
   - component: {fileID: 5940263795507860217}
+  - component: {fileID: 2211434263438585164}
   m_Layer: 0
   m_Name: Spotter
   m_TagString: Untagged
@@ -122,6 +123,29 @@ MonoBehaviour:
   waypoints: []
   targetPoint: 0
   speed: 0
+  rotationSpeed: 180
+  rotationDuration: 1
+--- !u!114 &2211434263438585164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4946429413724513768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cb445ae650ef74e89e5b8c3ad9f4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 0
+  viewAngle: 0
+  targetPlayer:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  player: {fileID: 0}
 --- !u!1 &8373179220221559958
 GameObject:
   m_ObjectHideFlags: 0
